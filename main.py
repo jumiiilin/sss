@@ -8,7 +8,7 @@ st.write("Streamlit 앱이 성공적으로 실행되었습니다!")
 # 업로드한 파일 경로에 맞게 변경
 @st.cache_data
 def load_data():
-    df_sales = pd.read_csv("/mnt/data/서울시 상권분석서비스_2024년.csv", encoding='cp949')
+    df_sales = pd.read_csv("/mnt/data/서울시 상권분석 서비스_2024년.csv", encoding='cp949')
     df_subway = pd.read_csv("/mnt/data/2024 서울교통공사_역별 시간대별 승하차인원(24.1~24.12).csv", encoding='cp949')
     return df_sales, df_subway
 
